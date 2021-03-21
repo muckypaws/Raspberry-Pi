@@ -13,7 +13,9 @@ You will need to modify the script for the current user id, and place it into
  Ensure the following Directories are created and available
  
 `mkdir ~/Scripts`
+
 `mkdir ~/Scripts/Data`
+
 `mkdir ~/Scripts/Data/Logs`
 
 You will need to update your **crontab** with the following
