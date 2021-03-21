@@ -20,7 +20,7 @@ You will need to modify the script for the current user id, and place it into
 
 You will need to update your **crontab** with the following
 
-`16 01 * * * /home/pi/Scripts/CheckUpdate.sh 2> /dev/null &`
+`16 01 * * * /home/pi/Scripts/CheckUpdate.sh 2>/dev/null &`
 
 Update the time and hour to something more suitable for your system.
 
