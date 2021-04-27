@@ -35,6 +35,10 @@ but can be updated for other metrics, like memory, disk space, IO etc in the fut
 
 Add the following to ***crontab*** 
 `0 * * * * /home/pi/Scripts/CollectMetrics.sh &`
+
 `15 * * * * /home/pi/Scripts/CollectMetrics.sh &`
+
 `30 * * * * /home/pi/Scripts/CollectMetrics.sh &`
+
 `45 * * * * /home/pi/Scripts/CollectMetrics.sh &`
+
