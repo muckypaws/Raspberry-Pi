@@ -26,3 +26,15 @@ Update the time and hour to something more suitable for your system.
 
 The CheckUpdate script will reboot the Pi should an update be found, an updated script 
 will be required to prevent this for updates that don't require a reboot.
+
+
+## CollectMetrics.sh
+
+This script simply collects metric data I'm interested in, currently CPU and GPU Temperature
+but can be updated for other metrics, like memory, disk space, IO etc in the future.
+
+Add the following to ***crontab*** 
+0 * * * * /home/pi/Scripts/CollectMetrics.sh &
+15 * * * * /home/pi/Scripts/CollectMetrics.sh &
+30 * * * * /home/pi/Scripts/CollectMetrics.sh &
+45 * * * * /home/pi/Scripts/CollectMetrics.sh &
