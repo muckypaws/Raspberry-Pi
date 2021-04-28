@@ -15,6 +15,9 @@
 
 MYOUTPUT=/home/pi/Scripts/Data/Logs
 
+# Clean Logs > 14 Days
+find $MYOUTPUT -mtime +14 -exec rm {} \;
+
 # Get Current System TimeStamp...
 timestamp=`date '+%y-%m-%d'`
 
