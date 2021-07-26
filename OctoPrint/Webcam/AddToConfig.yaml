@@ -1,0 +1,10 @@
+system:
+  actions:
+   - action: streamon
+     command: /home/pi/scripts/webcam start
+     confirm: false
+     name: Start video stream
+   - action: streamoff
+     command: sudo /home/pi/scripts/webcam stop
+     confirm: false
+     name: Stop video stream
