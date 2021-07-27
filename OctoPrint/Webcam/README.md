@@ -14,7 +14,7 @@ __webcamDaemon__
 
 ## YAML Configuration
 
-Copy the lines of text from the config.yaml file into __*~/.octoprint/config.yaml*__
+Copy the lines of text from the config.yaml file into __*~/.octoprint/config.yaml*__ append the commands to the end of file.
 
 ## Example octopi.txt Configuration File
 
