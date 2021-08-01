@@ -1,9 +1,17 @@
 #!/bin/bash
 # Start / stop streamer daemon
+# Fix to set Exposure on USB Camera if pulsing/flickering
+# Issue is observed - Muckypaws.com
 
 case "$1" in
     start)
         /home/pi/scripts/webcamDaemon >/dev/null 2>&1 &
+        # Set USB Camera Options to Prevent the Pulsing/Flashing Image Issue
+
+		# Change the exposure_absolute Parameter to a value suitable to your environment
+		sleep 2
+    	v4l2-ctl --set-ctrl=exposure_auto=1 >/dev/null 2>&1
+    	v4l2-ctl --set-ctrl=exposure_absolute=500 >/dev/null 2>&1
         echo "$0: started"
         ;;
     stop)
@@ -15,3 +23,4 @@ case "$1" in
         echo "Usage: $0 {start|stop}" >&2
         ;;
 esac
+
