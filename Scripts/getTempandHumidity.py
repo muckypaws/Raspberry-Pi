@@ -125,7 +125,7 @@ def get_temp_and_humidty():
 	dht = DHT(DHTPin)   				#create a DHT class object
 	chk = dht.readDHT11()     			#read DHT11 and get a return value. Then determine whether data read is normal according to the return value.
 	if(chk is 0):
-		print("%.0f%%, %.2f'C\n"%(dht.humidity,dht.temperature))	
+		print("%.0f%%, %.2f'C"%(dht.humidity,dht.temperature))	
 		
 		
 if __name__ == '__main__':
