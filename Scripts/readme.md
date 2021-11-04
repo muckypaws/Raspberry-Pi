@@ -43,3 +43,18 @@ Add the following to ***crontab***
 
 `45 * * * * /home/pi/Scripts/CollectMetrics.sh &`
 
+
+## getTempandHumidity.py
+
+This script is a slightly tweaked version of the Freenove Library function
+for the DHT11 Sensor
+
+In this example I have connected the DHT11 sensor to GPIO Pin 25
+The function will return two values as CSV Humidity and Temperature
+
+i.e. 78%,10.4'C
+
+I've added this to my *CollectMetrics* Scripts to monitor room temperature
+and humidty.
+
+It is optional.
